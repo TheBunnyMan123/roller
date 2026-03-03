@@ -8,10 +8,13 @@ for (const [key, val] of urlParams) {
   switch(key) {
     case "size":
       size = parseInt(val);
+      break;
     case "count":
       count = parseInt(val);
+      break;
     case "mod":
       mod = parseInt(val);
+      break;
   }
 }
 
