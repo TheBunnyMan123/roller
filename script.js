@@ -7,13 +7,13 @@ let mod = 0;
 for (const [key, val] of urlParams) {
   switch(key) {
     case "size":
-      size = parseInt(val);
+      size = parseInt(val, 10);
       break;
     case "count":
-      count = parseInt(val);
+      count = parseInt(val, 10);
       break;
     case "mod":
-      mod = parseInt(val);
+      mod = parseInt(val, 10);
       break;
   }
 }
