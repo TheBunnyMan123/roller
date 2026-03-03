@@ -1,5 +1,4 @@
 const urlParams = new URLSearchParams(window.location.search);
-
 let size = 20;
 let count = 1;
 let mod = 0;
@@ -13,7 +12,10 @@ for (const [key, val] of urlParams) {
       count = parseInt(val, 10);
       break;
     case "mod":
-      mod = parseInt(val, 10);
+      mod = parseInt(val);
+      break;
+    default:
+      console.log(key);
       break;
   }
 }
@@ -33,5 +35,4 @@ while (count > 0) {
   results += roll.toString()
 }
 
-document.getElementById("rolls").innerText = "Roll(s): " + results.toString();
-document.getElementById("result").innerText = "Result: " + result.toString();
+document.getElementById("rolls").innerText = "Roll(s): " + results.toString() + "\n" + result.toString();
