@@ -30,5 +30,5 @@ while (count > 0) {
   results += roll.toString()
 }
 
-document.getElementById("rolls").innerText = results.toString();
-document.getElementById("result").innerText = result.toString();
+document.getElementById("rolls").innerText = "Roll(s): " + results.toString();
+document.getElementById("result").innerText = "Result: " + result.toString();
