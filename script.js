@@ -1,4 +1,4 @@
-const urlParams = new URLSearchParams(window.location);
+const urlParams = new URLSearchParams(window.location.search);
 
 let size = 20;
 let count = 1;
